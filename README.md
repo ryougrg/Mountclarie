@@ -1,4 +1,4 @@
-# Learning Logs System
+# Himayalan Mountclarie System
 
 Java web application using Servlets and JSP.
 
