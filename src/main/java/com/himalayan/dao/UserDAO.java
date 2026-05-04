@@ -59,7 +59,7 @@ public class UserDAO {
         }
     }
 
-    // Get all unapproved users (for admin)
+    // Get all unapproved users (for the admin to view and check)
     public List<User> getUnapprovedUsers() throws SQLException {
         List<User> users = new ArrayList<>();
         String sql = "SELECT * FROM users WHERE role = 'user' AND is_approved = FALSE";
@@ -80,7 +80,7 @@ public class UserDAO {
         return users;
     }
 
-    // Approve user
+    // Approve users
     public boolean approveUser(int userId) throws SQLException {
         String sql = "UPDATE users SET is_approved = TRUE WHERE id = ?";
         try (Connection conn = DatabaseUtil.getConnection();

@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ProductDAO {
 
-    // Create product
+    // Create products
     public boolean addProduct(Product product) throws SQLException {
         String sql = "INSERT INTO products (product_name, category, price, stock_quantity, description, rack_number) VALUES (?, ?, ?, ?, ?, ?)";
         try (Connection conn = DatabaseUtil.getConnection();

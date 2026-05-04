@@ -25,7 +25,7 @@ public class Product {
         this.rackNumber = rackNumber;
     }
 
-    // Getters and Setters
+    // Getters and Setters section
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
