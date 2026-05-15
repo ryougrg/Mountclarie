@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Error - Himalayan Montclairé</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main.css">
 </head>
 <body>
 <div class="error-container">

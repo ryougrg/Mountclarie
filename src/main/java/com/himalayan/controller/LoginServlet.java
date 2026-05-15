@@ -1,6 +1,6 @@
 package com.himalayan.controller;
 
-import com.himalayan.dao.UserDAO;
+import com.himalayan.dao.UserDao;
 import com.himalayan.model.User;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
@@ -10,7 +10,7 @@ import jakarta.servlet.http.*;
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
-    private UserDAO userDAO = new UserDAO();
+    private UserDao userDAO = new UserDao();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
         // Validation
         if (email == null || email.trim().isEmpty() || password == null || password.trim().isEmpty()) {
             request.setAttribute("error", "Email and password are required");
-            request.getRequestDispatcher("/WEB-INF/views/Login.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
             return;
         }
 
@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
                 // Check if approved
                 if (!user.isApproved() && !user.getRole().equals("admin")) {
                     request.setAttribute("error", "Your account is pending admin approval");
-                    request.getRequestDispatcher("/WEB-INF/views/Login.jsp").forward(request, response);
+                    request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
                     return;
                 }
 
@@ -51,24 +51,24 @@ public class LoginServlet extends HttpServlet {
 
                 // Redirect based on role
                 if ("admin".equals(user.getRole())) {
-                    response.sendRedirect("admin/dashboard.jsp");
+                    response.sendRedirect("admin/admin-user-dashboard.jsp");
                 } else {
-                    response.sendRedirect("user/dashboard.jsp");
+                    response.sendRedirect("user/admin-user-dashboard.jsp");
                 }
             } else {
                 request.setAttribute("error", "Invalid email or password");
-                request.getRequestDispatcher("/WEB-INF/views/Login.jsp").forward(request, response);
+                request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
             }
         } catch (Exception e) {
             e.printStackTrace();
             request.setAttribute("error", "Login failed: " + e.getMessage());
-            request.getRequestDispatcher("/WEB-INF/views/Login.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
         }
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/views/Login.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
     }
 }

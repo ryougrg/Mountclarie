@@ -1,6 +1,6 @@
 package com.himalayan.controller;
 
-import com.himalayan.dao.UserDAO;
+import com.himalayan.dao.UserDao;
 import com.himalayan.model.User;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
@@ -10,7 +10,7 @@ import jakarta.servlet.http.*;
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
 
-    private UserDAO userDAO = new UserDAO();
+    private UserDao userDAO = new UserDao();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

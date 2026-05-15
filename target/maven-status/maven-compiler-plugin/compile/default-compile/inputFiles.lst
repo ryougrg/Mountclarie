@@ -1,13 +1,13 @@
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\controller\AdminProductServlet.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\controller\AdminUserServlet.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\controller\ErrorServlet.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\controller\LoginServlet.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\controller\LogoutServlet.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\controller\RegisterServlet.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\dao\ProductDAO.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\dao\UserDAO.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\filter\AuthFilter.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\model\Product.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\model\User.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\util\CookieUtil.java
-C:\Users\HP\Desktop\APT Samplex - Copy\src\main\java\com\himalayan\util\DatabaseUtil.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\controller\AdminProductServlet.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\controller\AdminUserServlet.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\controller\ErrorServlet.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\controller\LoginServlet.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\controller\LogoutServlet.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\controller\RegisterServlet.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\dao\ProductDAO.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\dao\UserDAO.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\filter\AuthFilter.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\model\Product.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\model\User.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\util\CookieUtil.java
+C:\Users\HP\Desktop\mountclarie\src\main\java\com\himalayan\util\DatabaseUtil.java
